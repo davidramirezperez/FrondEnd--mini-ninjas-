@@ -1,0 +1,87 @@
+/*$iconSpritePath: "../images/glyphicons-halflings.png";
+$iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
+
+@import "bootstrap-sass/lib/bootstrap";
+
+*/
+ * {
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+html, body {
+    margin: 20px;
+}
+body {
+    background: #fafafa;
+    font: 100% "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+#example {
+    #circle {
+        background-color:#00a627;
+        width: 300px;
+        height: 300px;
+        position: fixed;
+        top: 50%;
+        left:-150px;
+        margin-top:-150px;
+        border-radius:150px;
+    }
+    #content {
+        width: 750px;
+        height: 500px;
+        background-color:#cce5ed;
+        position:relative;
+        margin: 0 0 0 -350px;
+        left: 50%;
+        padding-top:20px;
+        h1 {
+            width: 700px;
+            background-color:#a60037;
+            margin:0 auto;
+            color: #fff;
+            text-indent:20px;
+        }
+        #arrowHolder {
+            background-color:#b9a176;
+            width: 700px;
+            margin:20px auto;
+            padding:20px 0;
+            li {
+                position: relative;
+                margin-bottom:20px;
+                height: 165px;
+                .arrow {
+                    position:absolute;
+                    top: 0;
+                    left:10%;
+                    background-color:#a65e00;
+                    height:40px;
+                    width:50px;
+                    top: 40%;
+                    margin-top: -20px;
+                    &:after {
+                        content:" ";
+                        width: 0;
+                        height: 0;
+                        border-top: 40px solid transparent;
+                        border-bottom: 40px solid transparent;
+                        border-left: 40px solid #A65E00;
+                        position: absolute;
+                        top: -20px;
+                        left: 50px;
+                    }
+                }
+                p {
+                    position:absolute;
+                    top: 0;
+                    right:25px;
+                    text-align:justify;
+                    color:blue;
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
