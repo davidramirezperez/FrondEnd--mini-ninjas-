@@ -12,8 +12,31 @@
 .contenido{
     width: 600px;
     margin: 0 auto;
+    background: rgba(0,0,255,0.2);
     p{
         padding-left: 100px; 
+        position: relative;
+        &:before{
+            content:"";
+            width:50px;
+            height:50px;
+            background:red;
+            position: absolute;
+            left: 0px;
+            top: 20%;
+
+        }
+        &:after{
+            content:"";
+            width:0px;
+            height:0px;
+            position: absolute;
+            left: 50px;
+            top: 0%;
+            border-top:50px solid transparent;
+            border-bottom:50px solid transparent;
+            border-left:50px solid red;
+        }
     }
 }
 
